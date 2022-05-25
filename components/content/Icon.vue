@@ -21,8 +21,9 @@ watch(() => props.name, async () => {
 })
 </script>
 
-<template>
-  <Iconify v-if="icon" :icon="icon" class="inline-block w-5 h-5" />
-  <Component :is="component" v-else-if="component" />
-  <span v-else>{{ name }}</span>
+<template lang="pug">
+Iconify(v-if="icon" :icon="icon" class="inline-block w-5 h-5")
+Component(:is="component" v-else-if="component")
+span
+  v-else {{ name }})
 </template>
