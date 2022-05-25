@@ -7,7 +7,7 @@ defineProps({
 })
 </script>
 
-<template>
+<template lang="pug">
   <div class="p-4 rounded-md bg-yellow-50">
     <div class="flex">
       <div v-if="icon" class="flex-shrink-0 mr-3">
